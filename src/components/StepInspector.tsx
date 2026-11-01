@@ -188,7 +188,7 @@ export const StepInspector: React.FC<StepInspectorProps> = ({ step, rotationsLog
         </div>
 
         {rotationsLog.length === 0 ? (
-          <p className="text-xs text-slate-500 dark:text-slate-400 italic py-1">{t.noRotationsYet}</p>
+          <p className="text-xs text-slate-600 dark:text-slate-400 italic py-1">{t.noRotationsYet}</p>
         ) : (
           <div className="space-y-1.5 max-h-40 overflow-y-auto pr-1">
             {rotationsLog.map((rot, idx) => (
@@ -197,7 +197,7 @@ export const StepInspector: React.FC<StepInspectorProps> = ({ step, rotationsLog
                 className="flex items-center justify-between p-2 rounded-lg bg-slate-50 dark:bg-slate-950 text-xs"
               >
                 <div className="flex items-center gap-1.5">
-                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400 font-semibold">#{rot.insertionNumber}</span>
+                  <span className="text-xs font-mono text-slate-600 dark:text-slate-400 font-semibold">#{rot.insertionNumber}</span>
                   <span className="font-semibold text-slate-800 dark:text-slate-200">
                     {t.nodeValueLabel} {rot.value}
                   </span>
